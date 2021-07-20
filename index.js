@@ -9,7 +9,7 @@ const app = express()
 connect()
 
 //    Settings
-const PORT = process.env.PORT || 4000
+const port = process.env.port || 4000
 app.use(cors())
 
 //    Middlewares
@@ -23,6 +23,6 @@ app.use('/api/projects', require('./routes/projects'))
 app.use('/api/tasks', require('./routes/tasks'))
 
 //    Start Server 
-app.listen(PORT, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`listen on PORT ${PORT}`)
 })

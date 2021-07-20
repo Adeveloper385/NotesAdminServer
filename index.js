@@ -23,6 +23,6 @@ app.use('/api/projects', require('./routes/projects'))
 app.use('/api/tasks', require('./routes/tasks'))
 
 //    Start Server 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
   console.log(`listen on PORT ${PORT}`)
 })
